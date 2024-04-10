@@ -7,6 +7,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { ScrollArea } from '$lib/components/ui/scroll-area';
 	import * as Resizable from "$lib/components/ui/resizable";
+	import { HomeIcon } from 'lucide-svelte';
 
 	export let data: {
 		settingsForm: SuperValidated<Infer<SettingsFormSchema>>;
@@ -28,6 +29,9 @@
 				</div>
 				<ScrollArea class="max-h-72 border-b">
 					<div class="w-full h-fit p-2">
+						<Button href="/chat" class="w-full mb-2" variant="secondary">
+							<HomeIcon class="w-4 h-4" />
+						</Button>
 						{#each data.chats as chat}
 							<Button class="w-full" href="/chat/{chat.uuid}" variant="ghost">
 								{chat.uuid?.split("-")?.[0]}

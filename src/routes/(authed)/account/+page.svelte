@@ -24,8 +24,6 @@
 	Go to chat
 </Button>
 
-<form method="post" action="?/signout" use:enhance={handleSignOut}>
-	<div>
-		<Button variant="destructive" disabled={loading}>Sign Out</Button>
-	</div>
+<form method="post" action="?/signOut" use:enhance={handleSignOut}>
+	<Button variant="destructive" type="submit" disabled={loading}>Sign Out</Button>
 </form>

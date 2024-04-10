@@ -56,7 +56,7 @@ export async function POST({ request, locals }: RequestEvent) {
 		)
 	} else {
 		const flowEdge = new FlowEdge(NOURO_FLOW_API_KEY);
-		console.log("qwdqwd");
+
 		const res = await flowEdge.execute({
 			session: {
 				id: uuid

@@ -35,7 +35,7 @@
 	<Form.Field {form} name="openai_api_key">
 		<Form.Control let:attrs>
 			<Form.Label>OpenAI API Key</Form.Label>
-			<Input {...attrs} placeholder="Ex: sk-13231232155214q" bind:value={$formData.openai_api_key} />
+			<Input {...attrs} type="password" placeholder="Ex: sk-13231232155214q" bind:value={$formData.openai_api_key} />
 		</Form.Control>
 		<Form.Description>This is your OpenAI API Key.</Form.Description>
 		<Form.FieldErrors />

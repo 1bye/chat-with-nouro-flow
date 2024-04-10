@@ -38,7 +38,7 @@
 	<div class="w-full h-full">
 
 	</div>
-	<div class="w-full max-h-16 flex justify-center">
+	<div class="w-full h-24 flex justify-center">
 		<ChatController bind:value bind:chosenBot bots={data.bots} {loading} onSubmit={createChat} />
 	</div>
 </div>

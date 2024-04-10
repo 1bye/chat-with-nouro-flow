@@ -42,7 +42,7 @@
   "type": "module",
   "dependencies": {
     "@langchain/openai": "^0.0.26",
-    "@nouro/flow": "0.0.9",
+    "@nouro/flow": "0.0.11",
     "@supabase/auth-helpers-sveltekit": "^0.12.0",
     "@supabase/auth-ui-shared": "^0.1.8",
     "@supabase/auth-ui-svelte": "^0.2.9",

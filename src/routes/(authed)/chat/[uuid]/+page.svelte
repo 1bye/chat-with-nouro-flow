@@ -108,7 +108,7 @@
 		<span class="text-sm">{data.uuid}</span>
 	</div>
 	<div class="w-full h-full flex flex-col p-4">
-		<div class="w-full h-[calc(100%-7.5rem)]">
+		<div class="w-full h-[calc(100%-6rem)]">
 			<ScrollArea class="w-full h-full">
 				<div class="w-full h-fit flex flex-col">
 					{#each $messages ?? [] as message}
@@ -117,7 +117,7 @@
 				</div>
 			</ScrollArea>
 		</div>
-		<div class="w-full max-h-16 flex justify-center">
+		<div class="w-full h-24 flex justify-center">
 			<ChatController bots={data.bots} onSubmit={continueConversation} {loading} bind:value bind:chosenBot />
 		</div>
 	</div>
